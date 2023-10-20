@@ -1,0 +1,73 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687386",
+    "dateExported": "2023-10-20T23:17:45.252Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6ac6699e-7df1-4957-b79f-96482b0d94fe",
+            "name": "Bootcamps",
+            "containerId": "",
+            "created": "2023-10-20T23:03:12.597Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ec2dc9a1-b62e-4723-80a4-6029061b860b",
+            "colId": "f4392c56-12f1-4023-8c18-64f295dc3839",
+            "containerId": "6ac6699e-7df1-4957-b79f-96482b0d94fe",
+            "name": "Traer todos los bootcamps",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-20T22:45:42.108Z",
+            "modified": "2023-10-20T22:52:49.210Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "041a98c8-80b7-4589-a4b3-e0c87107f290",
+            "colId": "f4392c56-12f1-4023-8c18-64f295dc3839",
+            "containerId": "6ac6699e-7df1-4957-b79f-96482b0d94fe",
+            "name": "Traer bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/4",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-10-20T22:49:49.276Z",
+            "modified": "2023-10-20T23:01:14.071Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e9c68332-bbd8-4ae1-b647-25ef769d7a34",
+            "colId": "f4392c56-12f1-4023-8c18-64f295dc3839",
+            "containerId": "6ac6699e-7df1-4957-b79f-96482b0d94fe",
+            "name": "Actualizar bootcamp por id",
+            "url": "http://127.0.0.1:5000/bootcamps/4",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-20T23:00:21.133Z",
+            "modified": "2023-10-20T23:00:21.133Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a4590927-2a8f-4578-a16b-eda8b42fa533",
+            "colId": "f4392c56-12f1-4023-8c18-64f295dc3839",
+            "containerId": "6ac6699e-7df1-4957-b79f-96482b0d94fe",
+            "name": "Crear un bootcamp",
+            "url": "http://127.0.0.1:5000/bootcamps",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-20T22:57:08.884Z",
+            "modified": "2023-10-20T22:57:54.140Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
