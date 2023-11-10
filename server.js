@@ -5,7 +5,8 @@ const conectarDB = require('./config/db')
 
 //dependencias de rutas
 const bootcampRoutes = require('./routes/bootcampRoutes')
-
+const courseRoutes = require('./routes/coursesRoutes')
+const reviewRoutes = require('./routes/reviewsRoutes')
 //vincular en archivo .env
 dotenv.config(
     { path : './config/.env' }
@@ -22,6 +23,14 @@ app.use(express.json())
 //al objeto
 app.use('/api/v1/devcamp/bootcamps',
 bootcampRoutes)
+
+app.use('/api/v1/devcamp/courses',
+courseRoutes)
+
+app.use('/api/v1/devcamp/reviews',
+reviewRoutes)
+
+
 
 //rutas de prueba
 app.get('/prueba' , (request , response) => {
