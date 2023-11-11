@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "devcamp-2687386",
-    "dateExported": "2023-11-10T23:50:12.623Z",
+    "dateExported": "2023-11-11T00:01:18.734Z",
     "version": "1.1",
     "folders": [
         {
@@ -230,7 +230,7 @@
             "method": "POST",
             "sortNum": 90000,
             "created": "2023-11-10T22:45:06.360Z",
-            "modified": "2023-11-10T23:20:39.050Z",
+            "modified": "2023-11-10T23:57:31.289Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -240,7 +240,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\": \"Que funcione otra vez\",\n  \"description\": \"Cualquier cosa\",\n  \"weeks\": \"123456789\",\n  \"enroll_cost\": 1,\n  \"minimum_skill\": [\n    \"Beginner\"\n    ]\n}",
+                "raw": "{\n  \"title\": \"Que funcione otra vez\",\n  \"description\": \"Cualquier cosa\",\n  \"weeks\": \"123456789\",\n  \"enroll_cost\": 10,\n  \"minimum_skill\": [\n    \"Beginner\"\n    ]\n}",
                 "form": []
             },
             "tests": []
@@ -250,11 +250,11 @@
             "colId": "b3a79a20-42ae-4993-ac53-ccba2534a61d",
             "containerId": "fe316fca-d5db-42e3-9280-6ed0dcd08119",
             "name": "Eliminar un curso por id",
-            "url": "http://127.0.0.1:5000/api/v1/devcamp/courses/654eb5d627e86739276a81da",
+            "url": "http://127.0.0.1:5000/api/v1/devcamp/courses/654ec2e82870ae57abadaa6a",
             "method": "DELETE",
             "sortNum": 100000,
             "created": "2023-11-10T22:45:36.032Z",
-            "modified": "2023-11-10T23:21:14.933Z",
+            "modified": "2023-11-10T23:59:21.762Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -292,7 +292,7 @@
             "method": "PUT",
             "sortNum": 130000,
             "created": "2023-11-10T23:09:52.592Z",
-            "modified": "2023-11-10T23:44:21.278Z",
+            "modified": "2023-11-11T00:00:26.762Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -302,7 +302,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"title\" : \"SENA\"\n}",
+                "raw": "{\n  \"title\" : \"2687386\"\n}",
                 "form": []
             },
             "tests": []
@@ -312,11 +312,11 @@
             "colId": "b3a79a20-42ae-4993-ac53-ccba2534a61d",
             "containerId": "7f2e4f86-b6da-492a-a0d7-1f54dd4e7f1f",
             "name": "Listar todos los reviews",
-            "url": "http://127.0.0.1:5000/api/v1/devcamp/reviews",
+            "url": "http://127.0.0.1:5000/api/v1/devcamp/reviews/654ebff0ae6ea0afef3783fb",
             "method": "GET",
             "sortNum": 140000,
             "created": "2023-11-10T23:11:00.888Z",
-            "modified": "2023-11-10T23:44:58.334Z",
+            "modified": "2023-11-10T23:59:51.133Z",
             "headers": [],
             "params": [],
             "tests": []

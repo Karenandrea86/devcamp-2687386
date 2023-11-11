@@ -31,9 +31,7 @@ const CourseSchema = new mongoose.Schema({
             true,
             "Este atributo es requerido"
         ],
-        max: [
-            999999999, "El número máximo de semanas para un curso es 9"
-        ],
+        max: [9, "No debe de contener mas de 9 semanas"],
     },
     enroll_cost: {
         type: Number,
