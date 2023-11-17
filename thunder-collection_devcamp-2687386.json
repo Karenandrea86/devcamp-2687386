@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "devcamp-2687386",
-    "dateExported": "2023-11-11T00:01:18.734Z",
+    "dateExported": "2023-11-17T23:10:43.298Z",
     "version": "1.1",
     "folders": [
         {
@@ -24,6 +24,20 @@
             "containerId": "",
             "created": "2023-11-10T23:07:52.057Z",
             "sortNum": 40000
+        },
+        {
+            "_id": "fee8a165-4dad-4c6d-ad36-cd4b8c55f5a4",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-11-17T19:26:31.732Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "c1f0a54c-3845-4e42-91f9-730a1c880130",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-11-17T20:03:43.674Z",
+            "sortNum": 60000
         }
     ],
     "requests": [
@@ -331,6 +345,44 @@
             "sortNum": 150000,
             "created": "2023-11-10T23:11:45.000Z",
             "modified": "2023-11-10T23:46:16.846Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "73867968-6dc5-452d-892c-7154bfa001df",
+            "colId": "b3a79a20-42ae-4993-ac53-ccba2534a61d",
+            "containerId": "c1f0a54c-3845-4e42-91f9-730a1c880130",
+            "name": "register",
+            "url": "http://127.0.0.1:5000/api/v1/devcamp/auth/register",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-11-17T20:04:52.001Z",
+            "modified": "2023-11-17T21:34:38.944Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Karen Andrea Velasquez Hueso\",\n  \"email\" : \"valen@soy.sena.edu.co\",\n  \"password\" : \"12345\",\n  \"role\" : \"publisher\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "31d0a6a9-9336-4688-a357-1043f04dde52",
+            "colId": "b3a79a20-42ae-4993-ac53-ccba2534a61d",
+            "containerId": "c1f0a54c-3845-4e42-91f9-730a1c880130",
+            "name": "login",
+            "url": "http://127.0.0.1:5000/api/v1/devcamp/auth/login",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-11-17T20:05:43.984Z",
+            "modified": "2023-11-17T20:14:13.627Z",
             "headers": [],
             "params": [],
             "tests": []

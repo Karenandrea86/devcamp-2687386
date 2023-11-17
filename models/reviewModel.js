@@ -10,14 +10,14 @@ const ReviewSchema = new mongoose.Schema({
     text: {
         type: String,
         required: [true, "Texto es requerido"],
-        maxlenght: [50, "No debe de contener mas de 50 caracteres"],
-        minlenght: [10, "Texto muy corto"]
+        maxlength: [50, "No debe de contener mas de 50 caracteres"],
+        minlength: [10, "Texto muy corto"]
     },
     rating: {
         type: Number,
         required: [true, "clasificación requerida"],
-        maxlenght: [10, "clasificación correcta"],
-        minlenght: [1, "clasificacion muy corta"]
+        maxlength: [10, "clasificación correcta"],
+        minlength: [1, "clasificacion muy corta"]
     },
    
     createdAt: Date

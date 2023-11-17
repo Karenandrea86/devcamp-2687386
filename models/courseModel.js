@@ -8,7 +8,7 @@ const CourseSchema = new mongoose.Schema({
             true,
             "Este atributo es requerido"
         ],
-        maxlenght: [
+        maxlength: [
             30, "Máximo 30 caracteres"
         ],
         min: [

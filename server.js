@@ -7,6 +7,8 @@ const conectarDB = require('./config/db')
 const bootcampRoutes = require('./routes/bootcampRoutes')
 const courseRoutes = require('./routes/coursesRoutes')
 const reviewRoutes = require('./routes/reviewsRoutes')
+const userRoutes = require('./routes/usersRoutes')
+
 //vincular en archivo .env
 dotenv.config(
     { path : './config/.env' }
@@ -30,16 +32,10 @@ courseRoutes)
 app.use('/api/v1/devcamp/reviews',
 reviewRoutes)
 
+app.use('/api/v1/devcamp/auth',
+userRoutes)
 
 
-//rutas de prueba
-app.get('/prueba' , (request , response) => {
-    response .send("Hola")
-})
-
-app.get('/prueba/:id' , (request , response) => {
-    response .send(`Hola , ${ request.params.id } `)
-})
 
 app.listen( process.env.PUERTO , () => {
     console.log(`Servidor en ejecucion: ${ process.env.PUERTO }`.bgYellow.green.bold )
