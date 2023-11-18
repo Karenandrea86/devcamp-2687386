@@ -49,5 +49,9 @@ userShema.pre('save', async function(){
 
 })
 
+//methodo para comparar password del usuario vs password del payload
+userShema.methods.compararPassword = async function(password){
+    return bcryptjs.compare(password, this.password)
+}
 
 module.exports = mongoose.model("User", userShema)
