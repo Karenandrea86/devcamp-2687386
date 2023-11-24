@@ -7,9 +7,12 @@ const mongoose=require('mongoose')
 router.post('/register', async (req,res) => {
     try {
         const user = await UserModel.create(req.body)
+        //crear token
+        const token = user.generarJWT()
         res.status(201).json({
             succes: true,
-            data: user
+            data: user,
+            token_jwt: token
         })
     } catch (error) {
         res.status(500).json({
@@ -30,7 +33,8 @@ router.post('/login', async (req,res) => {
         })
     }else{
         //2. SI LLEGA EMAIL, PERO EL USUARIO DE ESE EMAIL NO EXISTE
-        const user = await UserModel.findOne({email}).select("+password")
+        const user = await UserModel.findOne({email}).
+                                    select("+password")
         /*console.log(user)*/
         if(!user){
             return res.status(400).json({
@@ -41,13 +45,26 @@ router.post('/login', async (req,res) => {
             //3. SI LLEGA EMAIL, Y EL USUARO EXISTE, PERO EL PASSWORD NO CORRESPONDE
             const isMatch = await user.compararPassword(password)
             if (isMatch){
-                return res.status(200).json({
-                    succes: true,
-                    msg: "Usuario logeado correctamente",
-                    data: user
+                    const token =user.generarJWT()
+                    //opciones para creacion de la cookie
+                    const options ={
+                        expires:new Date(
+                                    Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 *60 *1000),
+                        httpOnly: true,
+                    }
+
+                    return res.status(200).
+                        cookie('token', token,  options).
+                        json({
+                            succes: true,
+                            msg: "Usuario logeado correctamente",
+                            data: user,
+                            jwt_token: token
                 })
             }else{
-                return res.status(400).json({
+                return res.status(400).
+                
+                json({
                     succes: false,
                     message: "Credenciales incorrectas"
                 })

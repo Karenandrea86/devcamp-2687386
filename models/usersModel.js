@@ -54,4 +54,17 @@ userShema.methods.compararPassword = async function(password){
     return bcryptjs.compare(password, this.password)
 }
 
+//metodo para crear el JWT
+userShema.methods.generarJWT = function(){
+    return jwt.sign({
+        id: this._id,
+        email: this.email
+    },
+    process.env.JWT_SECRET_KEY,
+    {
+        expiresIn: process.env.JWT_EXPIRE
+    }
+    )
+}
+
 module.exports = mongoose.model("User", userShema)

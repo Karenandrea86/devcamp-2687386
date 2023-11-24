@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "devcamp-2687386",
-    "dateExported": "2023-11-18T00:03:33.242Z",
+    "dateExported": "2023-11-24T23:30:03.205Z",
     "version": "1.1",
     "folders": [
         {
@@ -140,18 +140,27 @@
             "method": "POST",
             "sortNum": 40000,
             "created": "2023-11-03T20:51:14.966Z",
-            "modified": "2023-11-10T20:45:43.711Z",
+            "modified": "2023-11-24T23:27:03.395Z",
             "headers": [
                 {
                     "name": "Content-Type",
                     "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjEwMmFhOTg0OTQ4NmJhYzBmYTNiZCIsImVtYWlsIjoiY2JvQG1pc2VuYS5lZHUuY28iLCJpYXQiOjE3MDA4NjQ3NjYsImV4cCI6MTcwMzQ1Njc2Nn0.VwuFOsAolYzp5OVhO5RcdcPCUi65Ar40Ye1a8sW0Sow",
+                    "isDisabled": true
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"phone\": 5941301,\n  \"address\": \"SENA calle 52\",\n  \"topics\": [\n    \"AI\"\n    ],\n    \"createdAt\": \"2023-11-03\"\n}",
+                "raw": "{\n  \"name\":\"cristian\",\n  \"phone\": 5941301,\n  \"address\": \"SENA calle 52\",\n  \"topics\": [\n    \"AI\"\n    ],\n    \"createdAt\": \"2023-11-03\"\n}",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NjEwMmFhOTg0OTQ4NmJhYzBmYTNiZCIsImVtYWlsIjoiY2JvQG1pc2VuYS5lZHUuY28iLCJpYXQiOjE3MDA4NjQ3NjYsImV4cCI6MTcwMzQ1Njc2Nn0.VwuFOsAolYzp5OVhO5RcdcPCUi65Ar40Ye1a8sW0Sow"
             },
             "tests": []
         },
@@ -358,7 +367,7 @@
             "method": "POST",
             "sortNum": 160000,
             "created": "2023-11-17T20:04:52.001Z",
-            "modified": "2023-11-17T23:59:23.090Z",
+            "modified": "2023-11-24T22:22:49.399Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -368,7 +377,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"Karen Andrea Velasquez Hueso\",\n  \"email\" : \"kavelsquez@soy.sena.edu.co\",\n  \"password\" : \"123456\",\n  \"role\" : \"user\"\n}",
+                "raw": "{\n  \"name\" : \"Valentina\",\n  \"email\" : \"valentina@gmail.com\",\n  \"password\" : \"123456\",\n  \"role\" : \"user\"\n}",
                 "form": []
             },
             "tests": []
@@ -382,7 +391,7 @@
             "method": "POST",
             "sortNum": 170000,
             "created": "2023-11-17T20:05:43.984Z",
-            "modified": "2023-11-17T23:59:42.130Z",
+            "modified": "2023-11-24T22:26:06.180Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -392,7 +401,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"kavelsquez@soy.sena.edu.co\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"email\": \"cbo@misena.edu.co\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "tests": []
